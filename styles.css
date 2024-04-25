@@ -179,3 +179,33 @@ nav ul li a:hover {
     justify-content: flex-start;
     align-items: center;
 }
+
+
+
+
+
+/*** STORY.HTML ***/
+#story{
+    background-color: #070739;
+    height: 100vh; /* Set the height of the container to fill the viewport */
+    display: flex;
+    justify-content: center; /* Center the child elements horizontally */
+    align-items: center; /* Center the child elements vertically */
+}
+.container-story{
+    width: 80vw; /* Set the width of the container */
+    max-width: 1200px;
+}
+.cards-deck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1E099;
+}
+.card {
+    width: 100%; /* Make the cards take up the full width of the container */
+    margin-bottom: 20px; /* Add some space between cards */   
+}
+.story-h1{
+    font-size: 2rem;
+}
