@@ -1,48 +1,96 @@
 /* Common styles */
 h1 {
-    color: #ED7A9B;
+    color: #F0CAA3;
 }
-hr{
-    z-index: 2;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /*** INDEX.HTML ***/
 /* Format for the Introduction/Header */
+.container {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.content {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .header-container {
-    background-color: beige;
-    height: 100vh; /* You can adjust the height as needed */
-    position: relative; /* Enable absolute positioning within */
+    background-color: #00005C;
+    height: 100vh; /* Adjust height as needed */
 }
-.image-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, beige 100%); /* Adjust the colors and gradient direction as needed */
-    z-index: 1; /* Place the overlay above the image */
-}
+
 .header-img {
-    position: relative; /* Ensure proper stacking order */
-    z-index: 0; /* Set the image below the overlay */
-    width: 180%; /* Adjust image width */
+    width: 100%; /* Adjust image width */
+    margin: 1rem 0; /* Add space above image */
+    
+    
 }
+.img-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+}
+
 .name-intro {
     font-size: 6rem;
     font-family: "Satisfy", cursive;
-    position: relative; /* Ensure proper stacking order */
-    z-index: 2; /* Place the text above the overlay */
+    margin-bottom: 1rem; /* Adjust space below the name */
 }
+
 .name-intro-subtext {
     font-size: 1.35rem;
-    position: relative;
     font-family: "Satisfy", cursive;
-    padding-left: 12%;
     font-style: italic;
+    color: #F0CAA3;
 }
-.intro-left {
-    padding-top: 5%;
+
+.content-wrapper {
+    background-color: #F0CAA3;
+    width: 130%;
+    max-width: 120%;
+    margin: 0 -5% auto; /* Adjust the negative margin to shift it slightly left */
+    padding: 0 20px;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    flex-direction: column; /* Align children in a column */
 }
+
+
+.intro-about{
+    text-align: left;
+}
+.intro-about h2 {
+    text-align: center;
+    padding: 6% 0;
+    font-family: "Patrick Hand", cursive;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    /* CSS rules specific to mobile devices */
+    /* For example, you can adjust font size, padding, or layout */
+    body {
+        font-size: 14px;
+    }
+    .content-wrapper {
+        width: 100%;
+    }
+    /* Add more CSS rules as needed */
+}
+
 
 /* Navigation Bar Design */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -68,7 +116,8 @@ nav ul li a {
     padding: 18px;
     font-family: "Open Sans";
     text-transform: uppercase;
-    color: rgba(0, 35, 122, 0.5);
+    /*color: #rgba(0, 35, 122, 0.5);*/
+    color: #F0CAA3;
     font-size: 18px;
     text-decoration: none;
     display: block;
@@ -80,36 +129,6 @@ nav ul li a:hover {
     color: rgba(0, 35, 122, 0.7);
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    /* Adjustments for tablet devices and below */
-    .header-img {
-        width: 100%; /* Adjust image width for smaller screens */
-    }
-    .name-intro {
-        font-size: 4rem; /* Adjust font size for smaller screens */
-    }
-    .name-intro-subtext {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-}
-
-@media screen and (max-width: 576px) {
-    /* Adjustments for mobile devices */
-    .header-img {
-        width: 100%; /* Adjust image width for smaller screens */
-    }
-    .name-intro {
-        font-size: 3rem; /* Adjust font size for smaller screens */
-    }
-    .name-intro-subtext {
-        font-size: 0.75rem; /* Adjust font size for smaller screens */
-    }
-    nav ul li a {
-        padding: 10px; /* Adjust padding for smaller screens */
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-}
 
 
 
@@ -151,3 +170,12 @@ nav ul li a:hover {
     background-color: #0056b3;
   }
   
+/*** Footer ***/
+.footer{
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
