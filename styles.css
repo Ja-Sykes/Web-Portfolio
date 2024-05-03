@@ -183,29 +183,30 @@ nav ul li a:hover {
 
 
 
-
 /*** STORY.HTML ***/
-#story{
+
+/* General styling */
+#story {
     background-color: #070739;
-    height: 100vh; /* Set the height of the container to fill the viewport */
-    display: flex;
-    justify-content: center; /* Center the child elements horizontally */
-    align-items: center; /* Center the child elements vertically */
+    max-width: 75vw;
 }
-.container-story{
-    width: 80vw; /* Set the width of the container */
-    max-width: 1200px;
+
+.container-story {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 50vh;
+    
 }
-.cards-deck{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #E1E099;
+
+.cards-deck {
+    display: flex; /* Use flexbox to arrange cards */
+    justify-content: space-around; /* Distribute space evenly between cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
 }
+
 .card {
-    width: 100%; /* Make the cards take up the full width of the container */
-    margin-bottom: 20px; /* Add some space between cards */   
-}
-.story-h1{
-    font-size: 2rem;
+    width: calc(33.33% - 20px); /* Set the width of each card */
+    margin: 10px; /* Add margin around each card */
 }
