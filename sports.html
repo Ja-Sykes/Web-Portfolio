@@ -12,9 +12,86 @@
     <!-- Google Font Links-->
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Patrick+Hand&family=Satisfy&display=swap" rel="stylesheet">
+
+
+    <style>
+      /* Define color palette */
+      :root {
+          --primary-color: #00005C;
+          --secondary-color: #3B185F;
+          --accent-color: #C060A1;
+          --highlight-color: #F0CAA3;
+      }
+
+      /* Global styles */
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: var(--primary-color);
+          color: var(--highlight-color);
+          line-height: 1.6;
+      }
+
+      /* Main content */
+      .container {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 0 20px;
+      }
+
+      h2 {
+          color: var(--accent-color);
+      }
+
+      p {
+          margin-bottom: 20px;
+      }
+
+      /* Sports section */
+      .sports-section {
+          background-color: var(--accent-color);
+          padding: 20px;
+          border-radius: 10px;
+      }
+
+      .sport {
+          margin-bottom: 20px;
+      }
+
+      .sport h2 {
+          margin-top: 0;
+          color: var(--highlight-color);
+      }
+
+      .sport p {
+          color: var(--highlight-color);
+      }
+
+      .sport img {
+          max-width: 100%;
+          border-radius: 5px;
+          margin-bottom: 10px;
+      }
+
+      /* Footer */
+      footer {
+          background-color: var(--secondary-color);
+          text-align: center;
+          padding: 20px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+      }
+
+      footer p {
+          margin: 0;
+          color: var(--highlight-color);
+      }
+  </style>
+
 </head>
 <body>
-    
+  <header>
     <nav>
         <ul>
           <li>
@@ -34,15 +111,45 @@
           </li>
         </ul>
     </nav>
+  </header>
 
+  <div class="container">
+    <section class="sports-section">
+        <div class="sport">
+            <h2>Football</h2>
+            <p>Football has been my passion since childhood. I started playing in local leagues 3rd grade year.and eventually played
+               for my high school team. I now play for the University of Saint Francis as an offensive lineman. I love the teamwork
+                and strategy involved in the game, as well as the hard work that pays off</p>
+        </div>
+        
+        <div class="sport">
+            <h2>Basketball</h2>
+            <p>I began playing basketball officially my 6th grade year and quit after freshman year. Basketball has alwasy been fun to
+              me in which I enjoyed playing with my brothers. Although I am not nearly as good at it as I am football, it is still a fun
+              hobby I practice to this day
+            </p>
+        </div>
 
+        <div class="sport">
+            <h2>Track & Field</h2>
+            <p>Began playing track & field in 8th grade. I threw both shotput and discuss. I continued playing all throughout my high school years.
+              I love the individual challenge of throwing as it is mostly form which differentiate good and bad throwers.
+            </p>
+        </div>
 
+        <!-- Image -->
+        <div class="sport">
+            <img src="images/meFootball.png" alt="Football Image">
+            <p>Here's a photo of me playing football during one of our matches. 
+              Football has always been a big part of my life, and I've enjoyed every moment spent on the field.</p>
+        </div>
+    </section>
+  </div>
 
-
-
-
-
-
-    
+  <footer>
+      <p>&copy; 2024 My Sports Journey</p>
+  </footer>
+  
+  
 </body>
 </html>

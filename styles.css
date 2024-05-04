@@ -279,3 +279,30 @@ nav ul li a:hover {
     margin-bottom: 15% !important;
     border: solid black 4px;
 }
+
+
+
+/*** ABOUT . HTML ***/
+#about {
+    background-color: #00005C;
+    color: #00005C;
+}
+.about-h1{
+    color:#00005C;
+}
+
+.about{
+    width: 85vw;
+    height: 60vh;
+    margin-left: 8%;
+    background-color: #F0CAA3;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+
+/*** SPORTS HTML ***/
+.sports-img{
+    width: 25%;
+}
