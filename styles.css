@@ -9,6 +9,12 @@ html, body {
     padding: 0;
 }
 
+hr { 
+    color: #F0CAA3;
+    height: 3px;
+    z-index: 3;
+}
+
 /*** INDEX.HTML ***/
 /* Format for the Introduction/Header */
 .container {
@@ -187,26 +193,89 @@ nav ul li a:hover {
 
 /* General styling */
 #story {
-    background-color: #070739;
-    max-width: 75vw;
-}
-
-.container-story {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 50vh;
+    background-color: #00005C;
+    width: 99vw;
     
 }
-
-.cards-deck {
-    display: flex; /* Use flexbox to arrange cards */
-    justify-content: space-around; /* Distribute space evenly between cards */
-    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+.story-h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 80vw;
 }
 
-.card {
-    width: calc(33.33% - 20px); /* Set the width of each card */
-    margin: 10px; /* Add margin around each card */
+
+.languages {
+    padding: 6%;
+    width: 95vw;
+    color: #F0CAA3;
+}
+
+.html {
+    background-color: #C060A1;
+    padding: 6%;
+    border: black solid 5px;
+    text-align: right;
+    margin-right: 10% !important;
+}
+
+.languages-img{
+    width: 85%;
+}
+.row-languages{
+    padding: 6%;
+    border: black solid 5px;
+}
+.css {
+    background-color: #F0CAA3;
+    border: black solid 5px;
+    color: black;
+    text-align: left;
+    margin-left: 10% !important;
+}
+.css-h1{color: black;}
+
+
+.js {
+    background-color: #C060A1;
+    text-align: right;
+    margin-right: 10% !important;
+}
+
+.cSharp{
+    background-color: #F0CAA3;
+    border: black solid 5px;
+    color: black;
+    text-align: left;
+    margin-left: 10% !important;
+}
+.container-story-h3{
+    background-color: #F0CAA3;
+    text-align: left;
+    padding: 3% 7% 3% 6%;
+    border: solid black 4px;
+}
+
+.inspirtion-bg{
+    background-color: #00005C;   
+}
+.inspirtion {
+    background-color: #C060A1;
+    color: #F0CAA3;
+    width: 85vw;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    padding: 4% 4% 1% 4%;
+    border: solid black 4px;
+}
+
+
+.progression {
+    color: black;
+    background-color: #F0CAA3;
+    padding-top: 3%;
+    border: solid black 4px;
+}
+.projects {
+    margin-bottom: 15% !important;
+    border: solid black 4px;
 }
